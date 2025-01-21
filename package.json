@@ -1,6 +1,5 @@
 {
-  "homepage": "https://github.com/adi06112004/Haven-Parking-App",
-
+  "homepage": "https://your-username.github.io/Haven-Parking-App",
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
@@ -11,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "clsx": "^2.1.1",
