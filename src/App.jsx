@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes, useNavigate } from 'react-router-dom'
 import Start from './pages/Start'
 import UserLogin from './pages/UserLogin'
 import UserSignup from './pages/UserSignup'
@@ -20,7 +20,8 @@ const App = () => {
   return (
     <div>
       <Routes>
-        <Route path='/' element={<Start/>} />
+        <Route path="/" element={<Navigate to="/Haven-Parking-App" />} />
+        <Route path="/Haven-Parking-App" element={<Start />} />
         <Route path='/login' element={<UserLogin/>} />
         <Route path='/signup' element={<UserSignup/>} />
         <Route path='/home' element={<Home/>} />
